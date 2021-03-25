@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:src="@android:color/black"
+        android:id="@+id/imageViewCircle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Name "
+        android:textColor="@color/colorAccent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:id="@+id/textViewName"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/imageViewCircle"
+        android:layout_toEndOf="@+id/imageViewCircle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Location"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorAccent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:id="@+id/textViewLocation"
+        android:layout_below="@+id/textViewName"
+        android:layout_alignLeft="@+id/textViewName"
+        android:layout_alignStart="@+id/textViewName" />
+</RelativeLayout>
